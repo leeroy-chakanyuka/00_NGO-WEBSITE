@@ -19,8 +19,20 @@ body {
   align-items: flex-start;
   justify-content: center;
   background: linear-gradient(to top left, #28b487, #7dd56f);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
 }
 
+.center {
+  display: block;
+  margin: 0 auto;
+
+  max-width: 100%;
+  height: auto;
+}
 .show-modal {
   font-size: 2rem;
   font-weight: 600;
@@ -82,4 +94,127 @@ p {
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(3px);
   z-index: 5;
+}
+.footer {
+  background: #591e75;
+}
+
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+  font-size: 2.2rem;
+  color: var(--primary-color);
+  padding: 1rem 0;
+}
+
+.footer .box-container .box h3 i {
+  padding-right: 0.5rem;
+}
+
+.footer .box-container .box p {
+  font-size: 1.5rem;
+  color: var(--white);
+  padding: 1rem 0;
+  line-height: 2;
+}
+
+.footer .box-container .box a {
+  display: block;
+  font-size: 1.4rem;
+  color: var(--white);
+  padding: 1rem 0;
+}
+
+.footer .box-container .box a i {
+  padding-right: 0.5rem;
+  color: var(--primary-color);
+}
+
+.footer .box-container .box a:hover {
+  color: var(--primary-color);
+}
+
+.footer .credit {
+  font-size: 2rem;
+  margin-top: 2.5rem;
+  padding: 1rem;
+  padding-top: 2rem;
+  border-top: 0.1rem solid #cecece;
+  text-align: center;
+  color: var(--white);
+}
+
+.footer .credit span {
+  color: var(--primary-color);
+}
+
+/* end */
+
+/* media queries */
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  .header {
+    padding: 2rem 5rem;
+  }
+}
+@media (max-width: 768px) {
+  #menu {
+    display: inline-block;
+  }
+
+  .fa-times {
+    transform: rotate(180deg);
+  }
+
+  .header .navbar {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    background: var(--main-color);
+    border-top: 0.1rem solid #cecece;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  .header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .header .navbar a {
+    display: block;
+    margin: 1rem;
+    margin-left: 2rem;
+  }
+
+  .home .content h3 {
+    font-size: 5rem;
+  }
+
+  .book .content,
+  .book .left {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  .home .content h3 {
+    font-size: 4rem;
+  }
+
+  .table .row .content .container {
+    flex-wrap: wrap;
+  }
 }
