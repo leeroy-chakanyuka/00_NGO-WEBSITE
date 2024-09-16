@@ -28,14 +28,61 @@
       <a href="#newsletter">Donate</a>
       <a href="#order">Contact</a>
     </nav>
+    <style>
+      /* Add the necessary styling here */
+      .button-container {
+        position: relative;
+        width: 100%;
+        text-align: center;
+      }
+
+      .big-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px 50px;
+        font-size: 24px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        cursor: pointer;
+        z-index: 10; /* Ensures button is on top of the image */
+      }
+
+      .center {
+        display: block;
+        margin: auto;
+        position: relative;
+        z-index: 1; /* Ensures image is behind the button */
+      }
+    </style>
 
     <div class="fas fa-bars" id="menu"></div>
   </header>
 
   <!-- GO IN THE CSS FILE AND STICKY THE FOOTER/HEADER
    -->
+  <a
+    href="https://paypal.me/leeroyyy461?country.x=ZA&locale.x=en_US"
+    target="_blank"
+    ><button class="big-button" style="margin-top: -270px">Donate Now</button>
+  </a>
+  ><br /><br />
 
-  <img src="images/DONATIONS.gif" />
+  <script>
+    function click() {
+      const x = document.querySelector("#one");
+      x.addEventListener("click", function () {});
+    }
+  </script>
+  <div class="button-container">
+    <img
+      src="images/DONATIONS.gif"
+      class="center"
+      style="margin: auto; margin-top: 170px; margin-bottom: 110px"
+    />
+  </div>
 
   <section class="footer">
     <div class="box-container">
