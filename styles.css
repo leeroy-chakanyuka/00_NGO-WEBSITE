@@ -64,9 +64,9 @@ h1 {
 
 p {
   font-size: 1.8rem;
+  text-transform: uppercase;
 }
 
-/* -------------------------- */
 /* CLASSES TO MAKE MODAL WORK */
 .hidden {
   display: none;
@@ -154,68 +154,3 @@ p {
 }
 
 /* end */
-
-/* media queries */
-
-@media (max-width: 991px) {
-  html {
-    font-size: 55%;
-  }
-
-  .header {
-    padding: 2rem 5rem;
-  }
-}
-@media (max-width: 768px) {
-  #menu {
-    display: inline-block;
-  }
-
-  .fa-times {
-    transform: rotate(180deg);
-  }
-
-  .header .navbar {
-    position: absolute;
-    top: 99%;
-    left: 0;
-    right: 0;
-    background: var(--main-color);
-    border-top: 0.1rem solid #cecece;
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-  }
-
-  .header .navbar.active {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  }
-
-  .header .navbar a {
-    display: block;
-    margin: 1rem;
-    margin-left: 2rem;
-  }
-
-  .home .content h3 {
-    font-size: 5rem;
-  }
-
-  .book .content,
-  .book .left {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-
-@media (max-width: 450px) {
-  html {
-    font-size: 50%;
-  }
-
-  .home .content h3 {
-    font-size: 4rem;
-  }
-
-  .table .row .content .container {
-    flex-wrap: wrap;
-  }
-}
