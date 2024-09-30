@@ -48,8 +48,9 @@ don50.addEventListener("click", function () {
   donated();
 });
 
-custom.addEventListener("click", function () {
+custom.addEventListener("click", function (e) {
   const extraNum = Number(inp.value);
+  e.preventDefault();
   if (isNaN(extraNum)) {
     console.log(extraNum);
     alert("not a number, please try again!");
@@ -58,3 +59,4 @@ custom.addEventListener("click", function () {
     donated();
   }
 });
+// donated();
