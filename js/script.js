@@ -23,6 +23,7 @@ const don50 = document.querySelector("#fifty");
 const don100 = document.querySelector("#hundred");
 const custom = document.querySelector("#am");
 const inp = document.querySelector("#custom-amount");
+const donateOnmMain = document.querySelector("#donate");
 function donated() {
   const addedUp = total.reduce(function (a, v) {
     return (a += v);
@@ -59,4 +60,6 @@ custom.addEventListener("click", function (e) {
     donated();
   }
 });
+
+donateOnmMain.addEventListener("click", function () {});
 // donated();
