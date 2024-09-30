@@ -10,13 +10,8 @@
 }
 
 * {
-  font-family: "Poppins", sans-serif;
-  margin: 0;
-  padding: 0;
-  outline: none;
-  border: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-decoration: none;
-  transition: 0.2s linear;
   text-transform: capitalize;
 }
 
@@ -55,25 +50,6 @@ section {
 .heading span {
   text-transform: uppercase;
   color: var(--primary-color);
-}
-
-.btn {
-  font-size: 1.3rem;
-  color: #fff;
-  font-weight: 700;
-  padding: 1rem 3rem;
-  border-radius: 0.5rem;
-  background-image: linear-gradient(
-    to left top,
-    var(--primary-color),
-    var(--main-color)
-  );
-  background-size: 1000%;
-  transition: 0.25s ease;
-}
-
-.btn:is(:hover, :focus) {
-  background-position: bottom right;
 }
 
 /* header */
@@ -158,7 +134,7 @@ section {
   color: var(--white);
   padding-bottom: 3.5rem;
 }
-/* NEVER EVER ATTEMPT THAT  AGAIN
+/* NEVER EVER ATTEMPT TJHAT SHIT AGAIN
 /* end */
 
 /* footer */
@@ -221,68 +197,3 @@ section {
 }
 
 /* end */
-
-/* media queries */
-
-@media (max-width: 991px) {
-  html {
-    font-size: 55%;
-  }
-
-  .header {
-    padding: 2rem 5rem;
-  }
-}
-@media (max-width: 768px) {
-  #menu {
-    display: inline-block;
-  }
-
-  .fa-times {
-    transform: rotate(180deg);
-  }
-
-  .header .navbar {
-    position: absolute;
-    top: 99%;
-    left: 0;
-    right: 0;
-    background: var(--main-color);
-    border-top: 0.1rem solid #cecece;
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-  }
-
-  .header .navbar.active {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  }
-
-  .header .navbar a {
-    display: block;
-    margin: 1rem;
-    margin-left: 2rem;
-  }
-
-  .home .content h3 {
-    font-size: 5rem;
-  }
-
-  .book .content,
-  .book .left {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-
-@media (max-width: 450px) {
-  html {
-    font-size: 50%;
-  }
-
-  .home .content h3 {
-    font-size: 4rem;
-  }
-
-  .table .row .content .container {
-    flex-wrap: wrap;
-  }
-}
