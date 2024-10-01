@@ -12,21 +12,23 @@
     />
 
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="MODAL.css" />
   </head>
   <body>
     <!-- header section -->
 
     <header class="header">
-      <a href="#" class="logo"> <i class="fas fa-seedling"></i>NGO NAME</a>
+      <a href="#" class="logo">CARING IN THE CAPE</a>
 
       <!--fix link-->
 
       <nav class="navbar">
-        <a href="#home">home</a>
+        <a href="#">home</a>
+        <!--no link here because we dont want modal to pop up again-->
         <a href="#philosophy">About us</a>
         <a href="#inside">Projects</a>
         <a href="#table">Volunteer</a>
-        <a href="#newsletter">Donate</a>
+        <a href="donations page.html">Donate</a>
         <a href="#order">Contact</a>
       </nav>
 
@@ -39,8 +41,8 @@
 
     <section class="home" id="home">
       <div class="content">
-        <h3>GENERIC NGO NAME HERE</h3>
-        <a href="#" class="btn">DONATE</a>
+        <h3>CARING IN THE CAPE</h3>
+        <a href="donations page.html" class="btn" id="donate">DONATE</a>
       </div>
     </section>
 
@@ -51,36 +53,35 @@
 
       <div class="row">
         <div class="content">
-          <h3>At [GENERIC NGO NAME] WE BELIEVE</h3>
+          <h3>At Caring in the Cape WE BELIEVE</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-            quod suscipit cum quaerat est eos vero ea dolores? Ipsam, ab. Ipsa
-            quis ratione natus veniam ut quaerat non, nostrum adipisci. Lorem
-            ipsum dolor sit amet consectetur adipisicing elit. Distinctio quod
-            suscipit cum quaerat est eos vero ea dolores? Ipsam, ab. Ipsa quis
-            ratione natus veniam ut quaerat non, nostrum adipisci. Lorem ipsum
-            dolor sit amet consectetur, adipisicing elit. Voluptatum dolore
-            ratione dicta eligendi. Minima, repudiandae sapiente deleniti modi
-            consequuntur, quis quae eaque temporibus voluptate tempora
-            voluptates consectetur! Reprehenderit, molestias quis!
+            In a world facing unprecedented challenges, we believe in the power
+            of collective action to foster a brighter, more sustainable future.
+            Our mission is to bridge the gap between social equity and
+            environmental stewardship, ensuring that every voice is heard and
+            every community thrives.
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-            quod suscipit cum quaerat est eos vero ea dolores? Ipsam, ab. Ipsa
-            quis ratione natus veniam ut quaerat non, nostrum adipisci. Lorem
-            ipsum dolor sit amet consectetur adipisicing elit. Distinctio quod
-            suscipit cum quaerat est eos vero ea dolores? Ipsam, ab. Ipsa quis
-            ratione natus veniam ut quaerat non, nostrum adipisci. Lorem ipsum
-            dolor sit amet consectetur, adipisicing elit. Voluptatum dolore
-            ratione dicta eligendi. Minima, repudiandae sapiente deleniti modi
-            consequuntur, quis quae eaque temporibus voluptate tempora
-            voluptates consectetur! Reprehenderit, molestias quis!
+            Our planet is a shared home, and its preservation is our collective
+            responsibility. We advocate for sustainable practices that protect
+            our natural resources and promote biodiversity, ensuring a healthy
+            environment for future generations.
           </p>
           <p>
-            Voluptatum dolore ratione dicta eligendi. Minima, repudiandae
-            sapiente deleniti modi consequuntur, quis quae eaque temporibus
-            voluptate tempora voluptates consectetur! Reprehenderit, molestias
-            quis!
+            We believe in the strength of collaboration. By forming partnerships
+            with local communities, organizations, and governments, we create
+            impactful solutions that resonate and endure. And we envision a
+            world where communities thrive in harmony with nature, where social
+            justice is paramount, and where every individual is empowered to
+            contribute to a sustainable future. Together, we can create lasting
+            change that reverberates through generations.
+          </p>
+          <p>
+            We strive for a society where everyone has access to the
+            opportunities and resources necessary to succeed. Our initiatives
+            are designed to uplift marginalized voices and promote social
+            justice, recognizing the interconnectedness of environmental health
+            and human well-being.
           </p>
         </div>
 
@@ -90,9 +91,20 @@
       </div>
     </section>
 
-    <!-- end -->
-
-    <!-- footer -->
+    <div class="modal">
+      <button class="close-modal">&times;</button>
+      <h1 class="modal-text">BE A HERO, DONATE TO OUR CAUSE 🐱‍🏍🌳</h1>
+      <p>
+        We invite you to stand with us in this vital mission. Together, we can
+        build a world that reflects our shared values of sustainability, equity,
+        and hope. Let’s transform our vision into action, one step at a time.
+        <br /><br />
+        <a href="donations page.html" class="btn" style="margin: 0 40px"
+          >DONATE</a
+        >
+      </p>
+    </div>
+    <div class="overlay"></div>
 
     <section class="footer">
       <div class="box-container">
@@ -112,7 +124,7 @@
         </div>
 
         <div class="box">
-          <h3>NGO Activities</h3>
+          <h3>Volunteer</h3>
           <a href="#"><i class="fas fa-arrow-right"></i>Education Scheme</a>
           <a href="#"
             ><i class="fas fa-arrow-right"></i>Pollution Prevenetion</a
@@ -132,5 +144,6 @@
     </section>
 
     <script src="js/script.js"></script>
+    <script src="01_modalWindow.js"></script>
   </body>
 </html>

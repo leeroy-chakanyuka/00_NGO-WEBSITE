@@ -158,38 +158,38 @@ section {
   color: var(--white);
   padding-bottom: 3.5rem;
 }
-/* NEVER EVER ATTEMPT TJHAT SHIT AGAIN
+/* NEVER EVER ATTEMPT THAT  AGAIN
 /* end */
 
-.philosophy .row {
+.row {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 2rem;
 }
 
-.philosophy .row .content {
+.row .content {
   flex: 1 1 40rem;
 }
 
-.philosophy .row .content h3 {
+.row .content h3 {
   font-size: 3.5rem;
   color: var(--black);
   text-transform: uppercase;
 }
 
-.philosophy .row .content p {
+.row .content p {
   font-size: 1.6rem;
   color: var(--light-black);
   padding: 2rem 0;
   line-height: 2;
 }
 
-.philosophy .row .image {
+.row .image {
   flex: 1 1 40rem;
 }
 
-.philosophy .row .image img {
+.row .image img {
   width: 100%;
 }
 
