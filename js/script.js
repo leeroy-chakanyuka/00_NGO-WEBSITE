@@ -31,9 +31,9 @@ function donated() {
   amount.textContent = `R${addedUp}`;
 }
 donated();
-
+let added = 0;
 don10.addEventListener("click", function () {
-  total.push(10);
+  added = 10;
 
   donated();
 });
@@ -61,5 +61,10 @@ custom.addEventListener("click", function (e) {
   }
 });
 
-donateOnmMain.addEventListener("click", function () {});
+document.querySelector(".sub").addEventListener("click", function (e) {
+  e.preventDefault();
+  total.push(added);
+});
+
+document.addEventListener("click", function () {});
 // donated();
