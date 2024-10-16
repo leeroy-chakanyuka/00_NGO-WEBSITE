@@ -27,13 +27,9 @@ form.addEventListener("submit", function (e) {
   formData = {
     fullName: document.getElementById("fullName").value,
     email: document.getElementById("email").value,
-    age: document.getElementById("amount").value,
-    gender: document.getElementById("Gender").value,
-    message: document.getElementById("message").value,
   };
 
   // Log the values
-  console.log("Form Data:", formData);
 
   // Open the modal
   openModal();
@@ -53,5 +49,6 @@ overlay.addEventListener("click", closeModal);
 document.addEventListener("keydown", function (e) {
   if (e.key === "Escape" && !modal.classList.contains("hidden")) {
     closeModal();
+    location.reload();
   }
 });
