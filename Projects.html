@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Volunteer Opportunities in Cape Town</title>
+    <link rel="icon" href="images/favicon.jpg" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      nav {
+        background-color: #6a5acd;
+        padding: 0.5rem;
+      }
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+      }
+      nav a:hover {
+        background-color: #483d8b;
+      }
+      h1 {
+        color: #4b0082;
+      }
+      h2 {
+        color: #6a5acd;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        margin: 20px 0;
+      }
+      .section {
+        margin-bottom: 40px;
+      }
+      .cta {
+        background-color: #4b0082;
+        color: white;
+        padding: 12px 8px;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Volunteer Opportunities at Caring in the cape</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li class="homebutton"><a href="home.html">Home</a></li>
+        <li><a href="#home"> Welcome</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#pollution">Pollution</a></li>
+        <li><a href="#penguin">Penguin</a></li>
+        <li><a href="#litter">Litter</a></li>
+      </ul>
+    </nav>
+
+    <main id="home">
+      <h2>Welcome to Cape Town Volunteering</h2>
+      <img src="images/cpt.png" alt="Cape Town cityscape" />
+      <p>
+        Discover the various ways you can make a difference in Cape Town. Our
+        volunteer programs cover education, environmental conservation, and city
+        beautification. Explore each opportunity and find where you can
+        contribute your skills and passion.
+      </p>
+      <a href="donations.html" class="cta">Get Involved Today</a>
+    </main>
+
+    <section id="education" class="section" style="display: none">
+      <h2>Education Scheme</h2>
+      <img src="images/students.png" alt="Students in a classroom" />
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.
+      </p>
+      <img src="images/tutoring.png" alt="Volunteer tutoring a student" />
+      <p>
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </section>
+
+    <section id="pollution" class="section" style="display: none">
+      <h2>Pollution Prevention</h2>
+      <img src="images/beachcleanup.png" alt="Beach cleanup volunteers" />
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.
+      </p>
+      <img src="images/recycle.png" alt="Recycling center" />
+      <p>
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </section>
+
+    <section id="penguin" class="section" style="display: none">
+      <h2>Penguin Preservation</h2>
+      <img src="images/pengo.png" alt="African penguins on the beach" />
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.
+      </p>
+      <img src="images/volpeng.png" alt="Volunteer monitoring penguin nests" />
+      <p>
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </section>
+
+    <section id="litter" class="section" style="display: none">
+      <h2>City Litter Scheme</h2>
+      <img src="images/volrec.jpg" alt="Volunteers cleaning city park" />
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.
+      </p>
+      <img
+        src="images/morecleaning.png"
+        alt="Before and after of cleaned street"
+      />
+      <p>
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </section>
+    <script>
+      document.addEventListener("DOMContentLoaded", (event) => {
+        const navLinks = document.querySelectorAll("nav a");
+        const sections = document.querySelectorAll("main, section");
+        const goHome = document.querySelector(".homebutton");
+
+        // Event listener for the Home button to go to the actual home page
+        goHome.addEventListener("click", (e) => {
+          window.location.href = "home.html";
+        });
+
+        navLinks.forEach((link) => {
+          link.addEventListener("click", (e) => {
+            // Only prevent default for section-based links
+            if (!link.classList.contains("homebutton")) {
+              e.preventDefault();
+            }
+
+            const targetId = link.getAttribute("href").slice(1);
+            sections.forEach((section) => {
+              section.style.display =
+                section.id === targetId ? "block" : "none";
+            });
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
